@@ -1,0 +1,22 @@
+.item {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+
+.item a,
+.item a:link,
+.item a:visited {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s;
+}
+
+.item a,
+.item a:hover,
+.item a:active {
+  color: #00cd0d;
+}

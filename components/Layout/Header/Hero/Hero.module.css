@@ -1,0 +1,13 @@
+.hero img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 70rem;
+}
+
+@media (min-width: 1600px) {
+  .hero img {
+    width: 90rem;
+  }
+}
