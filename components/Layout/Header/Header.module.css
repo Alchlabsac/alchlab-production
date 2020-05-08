@@ -7,3 +7,41 @@
   justify-content: space-between;
   padding: 2rem 2rem;
 }
+/* Nav */
+.nav {
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 0;
+    right: -10rem;
+  }
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  float: right;
+}
+
+/* List items */
+.item {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+
+.item a,
+.item a:link,
+.item a:visited {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #f7f7f7;
+  transition: all 0.3s;
+}
+
+.item a,
+.item a:hover,
+.item a:active {
+  color: rgba(255, 255, 255, 0.664);
+}

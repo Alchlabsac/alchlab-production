@@ -1,0 +1,51 @@
+/* Footer nav */
+.nav ul {
+  list-style: none;
+  display: flex;
+  margin: 3rem;
+  float: right;
+  align-items: center;
+}
+
+/* Footer nav items */
+.item {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+
+.item a,
+.item a:link,
+.item a:visited {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s;
+}
+
+.item a,
+.item a:hover,
+.item a:active {
+  color: #00cd0d;
+}
+
+/* Social Links */
+
+.social {
+  width: 2rem;
+  margin: 0 0.5rem;
+}
+
+.social a:hover > svg,
+.social a:active > svg {
+  fill: #00cd0d;
+}
+
+/* Copyright */
+.copy {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
