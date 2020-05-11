@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "../../Button/Button";
-import Auxiliar from "../../../hoc/Auxiliar/Auxiliar";
 import styles from "./ServiceBox.module.css";
 
 const ServiceBox = ({ items }) => {

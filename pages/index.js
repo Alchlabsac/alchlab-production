@@ -6,6 +6,7 @@ import Container from "../components/UI/Container/Container";
 import ServiceBox from "../components/UI/Boxes/ServiceBox/ServiceBox";
 import { ServiceBoxItems } from "../components/UI/Boxes/ServiceBox/ServiceBoxItems";
 import PageTitleBox from "../components/UI/Boxes/PageTitleBox/PageTitleBox";
+import ContactBox from "../components/Contact/ContactBox/ContactBox";
 
 const IndexPage = () => {
   return (
@@ -15,6 +16,7 @@ const IndexPage = () => {
         <div>
           <PageTitleBox text="Qué hacemos"></PageTitleBox>
           <ServiceBox items={ServiceBoxItems} />
+          <ContactBox title="Soporte" phone="+51 947157351" email="admin@alchlab.com"></ContactBox>
         </div>
       </Container>
       <Footer />

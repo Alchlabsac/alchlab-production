@@ -1,0 +1,29 @@
+.contact {
+  border: 1px solid #ccc;
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 25rem;
+}
+
+.contact img {
+  width: 15px;
+}
+
+.contactTitle {
+  font-weight: bold;
+}
+
+.contactPhone {
+  font-weight: lighter;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+}
+
+.contactEmail {
+  font-weight: lighter;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+}
