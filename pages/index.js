@@ -5,13 +5,17 @@ import Button from "../components/UI/Button/Button";
 import Container from "../components/UI/Container/Container";
 import ServiceBox from "../components/UI/Boxes/ServiceBox/ServiceBox";
 import { ServiceBoxItems } from "../components/UI/Boxes/ServiceBox/ServiceBoxItems";
+import PageTitleBox from "../components/UI/Boxes/PageTitleBox/PageTitleBox";
 
 const IndexPage = () => {
   return (
     <Auxiliar>
       <Header />
       <Container>
-        <ServiceBox items={ServiceBoxItems} />
+        <div>
+          <PageTitleBox text="Qué hacemos"></PageTitleBox>
+          <ServiceBox items={ServiceBoxItems} />
+        </div>
       </Container>
       <Footer />
     </Auxiliar>
