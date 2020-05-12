@@ -1,0 +1,16 @@
+.ProductBar {
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 2px solid rgb(156, 155, 155);
+  border-bottom: 2px solid rgb(156, 155, 155);
+  margin: 5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.7;
+}
+
+.ProductBar img {
+  width: 80px;
+  padding: 1rem 0;
+}

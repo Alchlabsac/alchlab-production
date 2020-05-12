@@ -1,0 +1,26 @@
+.pageTitleBox {
+  background-image: linear-gradient(
+    to left bottom,
+    #1ba2d8,
+    #00bee9,
+    #00d8db,
+    #00eead,
+    #00ff65
+  );
+  width: 15rem;
+  height: 20rem;
+  border-radius: 0.7rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column-reverse;
+  color: white;
+  font-weight: bolder;
+  font-size: 2rem;
+  padding: 0 0.6rem 1rem 1.2rem;
+}
+
+.pageTitleBoxText {
+  margin: 0;
+  color: white;
+  font-weight: bold;
+}
