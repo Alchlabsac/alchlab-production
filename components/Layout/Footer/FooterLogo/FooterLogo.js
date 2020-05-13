@@ -4,7 +4,7 @@ import styles from './FooterLogo.module.css'
 const FooterLogo = () => {
   return (
     <div className={styles.logo}>
-      <img src="assets/header/logo.png" alt="Footer Logo" />
+      <img src="assets/footer/footer_logo.png" alt="Footer Logo" />
     </div>
   )
 }

@@ -24,3 +24,11 @@
   color: white;
   font-weight: bold;
 }
+
+@media (max-width: 680px) {
+  .pageTitleBox {
+    width: 12rem;
+    height: 18rem;
+    font-size: 1.4rem;
+  }
+}
