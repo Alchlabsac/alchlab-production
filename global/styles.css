@@ -18,3 +18,7 @@ body {
   background-color: #00cd0d;
   color: #fff;
 }
+
+html {
+  font-size: 62.5%;
+}

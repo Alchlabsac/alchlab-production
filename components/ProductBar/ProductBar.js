@@ -6,7 +6,7 @@ const ProductBar = ({ items }) => {
     <div className={styles.ProductBar}>
       {items.map((item) => {
         return (
-          <img src={item.path} alt={item.alt} />
+          <img src={item.path} alt={item.alt} key={item.path} />
         );
       })}
     </div>
