@@ -7,6 +7,13 @@
   justify-content: space-between;
   padding: 2rem 2rem;
 }
+
+@media screen and (max-width: 900px) {
+  .headerNav {
+    display: none;
+  }
+}
+
 /* Nav */
 .nav {
   @media screen and (min-width: 1200px) {

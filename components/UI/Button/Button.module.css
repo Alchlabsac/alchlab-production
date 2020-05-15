@@ -13,6 +13,8 @@
   justify-content: space-between;
   font-size: 1.4rem;
   font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
 .buttonWhite {
@@ -20,6 +22,7 @@
   margin: -0.2rem 1rem 0rem -2rem;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .buttonGreen {

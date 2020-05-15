@@ -1,6 +1,6 @@
 export const headerItems = [
-  { name: "Nosotros", link: "nosotros" },
-  { name: "Servicios", link: "servicios" },
-  { name: "Almacenamiento", link: "almacenamiento" },
-  { name: "Contacto", link: "contacto" },
+  { name: "Nosotros", link: "#us" },
+  { name: "Servicios", link: "#services" },
+  { name: "Almacenamiento", link: "#cloud" },
+  { name: "Contacto", link: "#contact" },
 ];

@@ -3,7 +3,7 @@
   padding: 1.5rem;
   border-top: 2px solid rgb(156, 155, 155);
   border-bottom: 2px solid rgb(156, 155, 155);
-  margin: 5rem 0;
+  margin: 10rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,4 +13,11 @@
 .ProductBar img {
   width: 80px;
   padding: 1rem 0;
+}
+
+@media (max-width: 700px) {
+  .ProductBar img {
+    width: 50px;
+    padding: 0.7rem 0;
+  }
 }

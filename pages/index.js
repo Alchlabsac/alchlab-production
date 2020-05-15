@@ -1,23 +1,32 @@
 import Header from "../components/Layout/Header/Header";
 import Footer from "../components/Layout/Footer/Footer";
 import Auxiliar from "../components/hoc/Auxiliar/Auxiliar";
-import Button from "../components/UI/Button/Button";
 import Container from "../components/UI/Container/Container";
-import ServiceBox from "../components/UI/Boxes/ServiceBox/ServiceBox";
-import { ServiceBoxItems } from "../components/UI/Boxes/ServiceBox/ServiceBoxItems";
-import PageTitleBox from "../components/UI/Boxes/PageTitleBox/PageTitleBox";
-import ContactBox from "../components/Contact/ContactBox/ContactBox";
+import IndexInfo from "../components/Layout/Index/IndexInfo/IndexInfo";
+import IndexServices from "../components/Layout/Index/IndexServices/IndexServices";
+import IndexCloud from "../components/Layout/Index/IndexCloud/IndexCloud";
+import Contact from "../components/Contact/Contact";
+import IndexHeading from "../components/Layout/Index/IndexHeading/IndexHeading";
+import ProductBar from "../components/ProductBar/ProductBar"
+import { productBarItems } from "../components/ProductBar/ProductBarItems"
+import RespNavigation from "../components/Layout/RespNavigation/RespNavigation"
+import Head from 'next/head';
 
 const IndexPage = () => {
   return (
     <Auxiliar>
+      <Head>
+        <title>Alchlab 🧪</title>
+      </Head>
       <Header />
+      <RespNavigation></RespNavigation>
       <Container>
-        <div>
-          <PageTitleBox text="Qué hacemos"></PageTitleBox>
-          <ServiceBox items={ServiceBoxItems} />
-          <ContactBox title="Soporte" phone="+51 947157351" email="admin@alchlab.com"></ContactBox>
-        </div>
+        <IndexHeading />
+        <IndexInfo></IndexInfo>
+        <IndexServices></IndexServices>
+        <IndexCloud></IndexCloud>
+        <ProductBar items={productBarItems} />
+        <Contact />
       </Container>
       <Footer />
     </Auxiliar>
@@ -25,10 +34,3 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
-
-/*
-import { productBarItems } from '../components/ProductBar/productBarItems';
-import ProductBar from '../components/ProductBar/productBar';
-
-<ProductBar items={productBarItems}></ProductBar> listo
-*/
