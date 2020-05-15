@@ -1,0 +1,32 @@
+.contactWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contactInfo {
+  width: 40%;
+}
+
+.map {
+  width: 100%;
+  margin-left: 1rem;
+}
+
+@media (max-width: 650px) {
+  .contactWrapper {
+    display: block;
+  }
+
+  .contactInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    padding-right: 3rem;
+  }
+
+  .map {
+    width: auto;
+    margin-left: 0rem;
+  }
+}

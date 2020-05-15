@@ -6,6 +6,19 @@
   margin-left: 1rem;
 }
 
+.indexCloudWrapper {
+  display: flex;
+}
+
+.indexCloudInfo {
+  width: 50%;
+  position: relative;
+}
+
+.indexCloudImages {
+  width: 50%;
+}
+
 .indexCloudImgWrap {
   text-align: center;
 }
@@ -47,4 +60,33 @@
   position: absolute;
   right: 0;
   bottom: 15px;
+}
+
+@media (max-width: 850px) {
+  .indexCloudWrapper {
+    display: block;
+  }
+
+  .indexCloudInfo {
+    width: 100%;
+    position: relative;
+  }
+
+  .indexCloudImages {
+    width: 100%;
+  }
+
+  .indexCloudAntena {
+    position: absolute;
+    right: 40px;
+    bottom: -40px;
+  }
+}
+
+@media (max-width: 850px) {
+  .indexCloudAntena {
+    position: absolute;
+    right: 0px;
+    bottom: -40px;
+  }
 }

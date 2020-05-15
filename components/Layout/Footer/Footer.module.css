@@ -15,6 +15,12 @@
   margin: 1rem;
 }
 
+@media (max-width: 1050px) {
+  .item {
+    font-size: 1.5rem;
+  }
+}
+
 .item a,
 .item a:link,
 .item a:visited {
@@ -32,6 +38,12 @@
 }
 
 /* Social Links */
+
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+}
 
 .social {
   width: 2rem;

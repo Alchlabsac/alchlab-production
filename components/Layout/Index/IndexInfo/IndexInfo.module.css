@@ -79,3 +79,30 @@
     font-size: 1.5rem;
   }
 }
+
+.modalContent {
+  padding: 1.5rem;
+}
+
+.modalContent h2 {
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.modalContent p {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+.modalContent a {
+  font-size: 2rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  margin-top: 2rem;
+  color: #00cc0e;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

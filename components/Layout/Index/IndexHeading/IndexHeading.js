@@ -4,7 +4,7 @@ import Button from '../../../UI/Button/Button'
 
 const IndexHeading = () => {
   return (
-    <div style={{ paddingTop: "18rem", paddingLeft: "8rem" }}>
+    <div style={{ paddingTop: "18rem", paddingLeft: "1rem" }}>
       <Container>
         <div>
           <div>
@@ -17,7 +17,7 @@ const IndexHeading = () => {
             de websites y apps
           </h2>
             <div style={{ marginTop: "2rem" }}>
-              <Button link="/" text="Contáctanos" type="&#9658;" />
+              <Button link="https://api.whatsapp.com/send?phone=51947157351&text=%C2%A1Hola!%2C%20me%20gustar%C3%ADa%20tener%20m%C3%A1s%20informaci%C3%B3n" text="Contáctanos" type="&#9658;" />
             </div>
           </div>
         </div>

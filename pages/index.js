@@ -9,11 +9,17 @@ import Contact from "../components/Contact/Contact";
 import IndexHeading from "../components/Layout/Index/IndexHeading/IndexHeading";
 import ProductBar from "../components/ProductBar/ProductBar"
 import { productBarItems } from "../components/ProductBar/ProductBarItems"
+import RespNavigation from "../components/Layout/RespNavigation/RespNavigation"
+import Head from 'next/head';
 
 const IndexPage = () => {
   return (
     <Auxiliar>
+      <Head>
+        <title>Alchlab 🧪</title>
+      </Head>
       <Header />
+      <RespNavigation></RespNavigation>
       <Container>
         <IndexHeading />
         <IndexInfo></IndexInfo>

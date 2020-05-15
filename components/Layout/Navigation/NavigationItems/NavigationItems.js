@@ -8,15 +8,15 @@ const NavigationItems = ({ items, listClasses, itemClasses, socialClasses }) => 
         {items.map((item) => {
           if (item.img) {
             return (
-              <li>
+              <li key={item.img}>
                 <a href={item.link}>
-                  <img class={socialClasses} src={item.img} alt={item.alt} />
+                  <img className={socialClasses} src={item.img} alt={item.alt} />
                 </a>
               </li>
             );
           }
           return (
-            <NavigationItem classes={itemClasses} link={item.link}>
+            <NavigationItem key={item.link} classes={itemClasses} link={item.link}>
               {item.name}
             </NavigationItem>
           );

@@ -7,7 +7,8 @@
     #00eead,
     #00ff65
   );
-  width: 15rem;
+  min-width: 10rem;
+  max-width: 15rem;
   height: 20rem;
   border-radius: 0.7rem;
   text-transform: uppercase;

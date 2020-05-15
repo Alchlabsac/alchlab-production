@@ -7,9 +7,9 @@ import Container from "../../../UI/Container/Container";
 const IndexCloud = () => {
   return (
     <Container>
-      <div className={styles.indexCloud}>
-        <div style={{ display: "flex" }}>
-          <div style={{ width: "50%", position: "relative" }}>
+      <div className={styles.indexCloud} id="cloud">
+        <div className={styles.indexCloudWrapper}>
+          <div className={styles.indexCloudInfo}>
             <h2 className={styles.indexCloudTitle}>
               Estrategia en la nube, migración y automatización.
               </h2>
@@ -25,7 +25,7 @@ const IndexCloud = () => {
               <Button link="/" text="Leer más" type="+" />
             </div>
           </div>
-          <div style={{ width: "50%" }}>
+          <div className={styles.indexCloudImages}>
             <div className={styles.indexCloudImgWrap}>
               <div className={styles.indexCloudCloud}>
                 <img src="assets/nube1.png" alt="Nube" />

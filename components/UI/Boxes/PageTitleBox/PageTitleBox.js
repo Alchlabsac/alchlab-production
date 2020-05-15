@@ -3,8 +3,8 @@ import styles from "./PageTitleBox.module.css"
 
 const PageTitleBox = ({ text }) => {
   return (
-    <div class={styles.pageTitleBox}>
-      <p class={styles.pageTitleBoxText}>{text}</p>
+    <div className={styles.pageTitleBox}>
+      <p className={styles.pageTitleBoxText}>{text}</p>
     </div>
   );
 };

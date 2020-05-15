@@ -6,7 +6,7 @@ import { ServiceBoxItems } from "../../../UI/Boxes/ServiceBox/ServiceBoxItems";
 
 const IndexServices = () => {
   return (
-    <div>
+    <div id="services">
       <Container>
         <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "10rem" }}>
           <PageTitleBox text="Que hacemos" />

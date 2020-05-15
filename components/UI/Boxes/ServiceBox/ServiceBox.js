@@ -7,7 +7,7 @@ const ServiceBox = ({ items }) => {
     <div className={styles.serviceBoxWrapper}>
       {items.map((item) => {
         return (
-          <div className={styles.serviceBox}>
+          <div className={styles.serviceBox} key={item.imgSrc}>
             <span>
               <img
                 src={item.imgSrc}
