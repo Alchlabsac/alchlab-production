@@ -8,7 +8,7 @@ export const IndexCloudItems = [
     key: 2
   },
   {
-    listed: "NGinx, Apache y Kong API Gateway",
+    listed: "Amazon API Gateway",
     key: 3
   },
   {

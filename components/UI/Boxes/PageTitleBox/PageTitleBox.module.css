@@ -33,3 +33,9 @@
     font-size: 1.4rem;
   }
 }
+
+@media (max-width: 1420px) and (min-width: 1230px) {
+  .pageTitleBox {
+    min-width: 15rem;
+  }
+}

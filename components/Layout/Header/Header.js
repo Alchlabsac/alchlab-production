@@ -9,6 +9,9 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <Hero />
+      <div className={styles.respLogo}>
+        <Logo />
+      </div>
       <div className={styles.headerNav}>
         <Logo />
         <NavigationItems items={headerItems} listClasses={styles.nav} itemClasses={styles.item} />

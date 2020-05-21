@@ -2,8 +2,27 @@
   margin-bottom: 10rem;
 }
 
+.styledHeading {
+  background-image: linear-gradient(to right bottom, #00cd0ec7, #127e19b4),
+    url(/assets/modals/cloud.jpeg);
+  padding: 2rem 0;
+  border-radius: 0.8rem;
+}
+
 .indexCloudCloud {
   margin-left: 1rem;
+  position: relative;
+}
+
+.indexCloudCloud h3 {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
 
 .indexCloudWrapper {
@@ -21,15 +40,17 @@
 
 .indexCloudImgWrap {
   text-align: center;
+  padding-top: 3rem;
 }
 
 .indexCloudTitle {
   margin-bottom: 3rem;
-  font-weight: bold;
+  font-weight: 800;
+  font-size: 2rem;
 }
 
 .indexCloudList {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   margin-left: 1.5rem;
   margin-top: 2rem;
   margin-bottom: 5rem;
@@ -44,6 +65,7 @@
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1rem; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
+  margin-right: 1rem;
 }
 
 .indexCloudItems {
@@ -62,6 +84,16 @@
   bottom: 15px;
 }
 
+@media (min-width: 1439px) {
+  .indexCloudTitle {
+    font-size: 2.5rem;
+  }
+
+  .indexCloudList {
+    font-size: 1.9rem;
+  }
+}
+
 @media (max-width: 850px) {
   .indexCloudWrapper {
     display: block;
@@ -78,15 +110,13 @@
 
   .indexCloudAntena {
     position: absolute;
-    right: 40px;
-    bottom: -40px;
+    right: 0px;
+    bottom: -55px;
   }
 }
 
-@media (max-width: 850px) {
-  .indexCloudAntena {
-    position: absolute;
-    right: 0px;
-    bottom: -40px;
+@media (max-width: 600px) {
+  .indexCloudList {
+    font-size: 1.5rem;
   }
 }

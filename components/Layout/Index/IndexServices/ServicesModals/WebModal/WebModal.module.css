@@ -1,0 +1,7 @@
+.styledHeading {
+  background-image: linear-gradient(to right bottom, #00cd0ec7, #127e19b4),
+    url(/assets/modals/responsive.jpg);
+  padding: 2rem 0;
+  border-radius: 0.8rem;
+  background-position: center;
+}

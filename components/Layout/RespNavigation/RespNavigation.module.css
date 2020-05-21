@@ -17,7 +17,7 @@
   right: 6rem;
   border-radius: 50%;
   z-index: 2000;
-  box-shadow: 0 1rem 3rem rgba(#000, 0.1);
+  box-shadow: 0 0 10px rgba(156, 155, 155, 0.2);
   text-align: center;
   cursor: pointer;
 }
@@ -43,7 +43,7 @@
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#00cd0d, #039e0d);
+  background-image: radial-gradient(#00cd0d, #046d0b);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
@@ -66,11 +66,7 @@
   height: 100vh;
   position: fixed;
   top: 0;
-  left: 0;
   z-index: 1500;
-  opacity: 0;
-  width: 0;
-  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .list {
@@ -82,14 +78,28 @@
   text-align: center;
   width: 100%;
 }
-
-.item {
-  margin: 1rem;
-}
-
 .link span {
   margin-right: 1.5rem;
   display: inline-block;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    #fff 50%
+  );
+  background-size: 220%;
+  transition: all 0.4s;
 }
 
 .link:link,
@@ -117,24 +127,8 @@
   color: #00cd0d;
   transform: translateX(1rem);
 }
-
-.link:link,
-.link:visited {
-  display: inline-block;
-  font-size: 3rem;
-  font-weight: 300;
-  padding: 1rem 2rem;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-image: linear-gradient(
-    120deg,
-    transparent 0%,
-    transparent 50%,
-    #fff 50%
-  );
-  background-size: 220%;
-  transition: all 0.4s;
+.item {
+  margin: 1rem;
 }
 
 .icon {
@@ -195,6 +189,37 @@
 }
 
 .drawerNavOpen {
-  opacity: 1;
   width: 100%;
+  animation: showNav 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+  z-index: 1500;
+}
+
+.drawerNavClosed {
+  width: 100%;
+  animation: closeNav 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+@keyframes showNav {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes closeNav {
+  0% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-20%);
+    z-index: -1500;
+  }
 }

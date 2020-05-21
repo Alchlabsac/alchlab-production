@@ -5,11 +5,11 @@ const ContactBox = ({ title, phone, email }) => {
   return (
     <div className={styles.contact}>
       <h3 className={styles.contactTitle}>{title}</h3>
-      <div>
+      <div style={{ marginTop: "1rem" }}>
         <img src="assets/contact-phone.svg" alt="Contact Phone" />
         <span className={styles.contactPhone}>{phone}</span>
       </div>
-      <div>
+      <div style={{ marginTop: "1rem" }}>
         <img src="assets/contact-card.svg" alt="Contact email" />
         <span className={styles.contactEmail}>{email}</span>
       </div>
