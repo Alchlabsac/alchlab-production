@@ -49,6 +49,12 @@
   z-index: -2;
 }
 
+@media (max-width: 840px) {
+  .IndexInfoAntena {
+    bottom: -40px;
+  }
+}
+
 @media (max-width: 680px) {
   .IndexInfoWrapper {
     display: block;
