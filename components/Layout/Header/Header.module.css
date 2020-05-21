@@ -14,15 +14,6 @@
   }
 }
 
-/* Nav */
-.nav {
-  @media screen and (min-width: 1200px) {
-    position: absolute;
-    top: 0;
-    right: -10rem;
-  }
-}
-
 .nav ul {
   list-style: none;
   display: flex;
@@ -51,4 +42,29 @@
 .item a:hover,
 .item a:active {
   color: rgba(255, 255, 255, 0.664);
+}
+
+@media (min-width: 1600px) {
+  .item {
+    font-size: 2.3rem;
+  }
+}
+
+.respLogo {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .respLogo {
+    display: block;
+    position: absolute;
+    left: 3rem;
+    top: 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .respLogo div img {
+    width: 8rem;
+  }
 }

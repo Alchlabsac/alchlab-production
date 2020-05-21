@@ -3,6 +3,8 @@ export const productBarItems = [
   { path: "assets/techbar/pwalogo.png", alt: "PWA logo" },
   { path: "assets/techbar/reactlogo.png", alt: "React logo" },
   { path: "assets/techbar/pythonlogo.png", alt: "Python logo" },
+  { path: "assets/techbar/djangologo.png", alt: "Django logo" },
+  { path: "assets/techbar/flasklogo.png", alt: "Flash logo" },
   { path: "assets/techbar/wordpresslogo.png", alt: "Wordpress logo" },
   { path: "assets/techbar/woocommercelogo.png", alt: "Woocommerce logo" },
 ];

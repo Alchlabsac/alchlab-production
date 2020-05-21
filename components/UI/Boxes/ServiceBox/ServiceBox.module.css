@@ -36,10 +36,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  /*break
-    flex-direction: column;
-    width: 65%;*/
 }
 
 @media (max-width: 1230px) {
@@ -52,31 +48,38 @@
     justify-content: center;
   }
 
-  .serviceBoxWrapper {
-    flex-direction: column;
-    width: 65%;
-  }
-
   .serviceBoxTitle {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-top: 2rem;
+    margin-bottom: 3rem;
   }
 
   .serviceBoxDescription {
     margin-left: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 3rem;
     height: 10rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .serviceBoxTitle {
-    font-size: 1.7rem;
+    font-size: 2.2rem;
     margin-top: 2rem;
   }
 
   .serviceBoxDescription {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+  }
+
+  .serviceBoxWrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .serviceBoxWrapper {
+    justify-content: space-around;
   }
 }

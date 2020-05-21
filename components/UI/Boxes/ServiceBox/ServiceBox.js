@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../../Button/Button";
 import styles from "./ServiceBox.module.css";
 
-const ServiceBox = ({ items }) => {
+const ServiceBox = ({ items, serviceClicked }) => {
   return (
     <div className={styles.serviceBoxWrapper}>
       {items.map((item) => {
@@ -19,7 +19,7 @@ const ServiceBox = ({ items }) => {
             <p className={styles.serviceBoxDescription}>
               {item.boxDescription}
             </p>
-            <Button link={item.btnLink} text="Leer más" type="+"></Button>
+            <Button text="Leer más" type="+" clicked={() => serviceClicked(item.id)}></Button>
           </div>
         );
       })}

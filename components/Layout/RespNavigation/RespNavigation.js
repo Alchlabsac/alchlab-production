@@ -29,7 +29,7 @@ class RespNavigation extends Component {
 
         <div className={!this.state.openDrawer ? styles.background : `${styles.background} ${styles.drawerBackgroundOpen}`}>&nbsp;</div>
 
-        <nav className={!this.state.openDrawer ? styles.nav : `${styles.nav} ${styles.drawerNavOpen}`}>
+        <nav className={!this.state.openDrawer ? `${styles.nav} ${styles.drawerNavClosed}` : `${styles.nav} ${styles.drawerNavOpen} ${styles.navShow}`}>
           <ul className={styles.list}>
             {headerItems.map((item) => {
               return (

@@ -1,0 +1,32 @@
+.services {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+}
+
+@media (max-width: 1230px) {
+  .services {
+    display: block;
+  }
+
+  .pageTitle {
+    font-size: 3rem;
+    max-width: 60rem;
+    min-width: 30rem;
+    margin-bottom: 5rem;
+    height: 12rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .services {
+    display: block;
+  }
+
+  .pageTitle {
+    font-size: 3rem;
+    max-width: 60rem;
+    margin-bottom: 5rem;
+    height: 12rem;
+  }
+}
