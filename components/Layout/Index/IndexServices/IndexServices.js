@@ -7,7 +7,7 @@ import styles from "./IndexServices.module.css";
 import Modal from "../../../UI/Modal/Modal";
 import ProductModal from "./ServicesModals/ProductModal/ProductModal";
 import DesignModal from "./ServicesModals/DesignModal/DesignModal";
-import WebModal from "./ServicesModals/WebModal/webModal";
+import WebModal from "./ServicesModals/WebModal/WebModal";
 
 class IndexServices extends Component {
   state = {

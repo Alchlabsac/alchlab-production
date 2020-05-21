@@ -63,6 +63,13 @@
   }
 }
 
+@media (max-width: 460px) {
+  .respLogo {
+    left: 1rem;
+    top: 2rem;
+  }
+}
+
 @media (max-width: 500px) {
   .respLogo div img {
     width: 8rem;
