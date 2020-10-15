@@ -1,16 +1,56 @@
 import React from "react";
-import styles from "./Button.module.css";
+import PropTypes from "prop-types";
 
-const Button = ({ link, text, type, clicked }) => {
+import StyledButton from "./Button.styles";
+
+const Button = (props) => {
   return (
-    <a href={link} className={styles.button} onClick={clicked}>
-      <span className={styles.buttonWhite}>{text}</span>
-      <span className={styles.buttonGreen}>
-        <span>{type}</span>
-      </span>
-    </a>
+    <StyledButton
+      white={props.white}
+      green={props.green}
+      formButton={props.formButton}
+      normal={props.normal}
+    >
+      {props.normal ? (
+        <a href={props.link}>
+          {props.text}
+          {props.white ? (
+            <span>
+              <img src="assets/svg/icon-send.svg" alt="Enviar" />
+            </span>
+          ) : null}
+        </a>
+      ) : null}
+      {props.formButton ? (
+        <div>
+          {/** button y proptype de btnType */}
+          <input type="submit" value={props.text} />{" "}
+          {props.white ? (
+            <span>
+              <img src="assets/svg/icon-send.svg" alt="Enviar" />
+            </span>
+          ) : null}
+        </div>
+      ) : null}
+    </StyledButton>
   );
 };
 
-export default Button;
+Button.propTypes = {
+  link: PropTypes.string,
+  white: PropTypes.bool,
+  green: PropTypes.bool,
+  normal: PropTypes.bool,
+  formButton: PropTypes.bool,
+  text: PropTypes.string.isRequired,
+};
 
+Button.defaultProps = {
+  link: "",
+  green: false,
+  white: false,
+  normal: false,
+  formButton: false,
+};
+
+export default Button;
